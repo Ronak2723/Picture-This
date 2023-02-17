@@ -8,15 +8,22 @@
   <title>Picture This!</title>
   <link rel="stylesheet" href="style.css">
 </head>
- 
+
 <body>
   <header class="header">
     <div class="title">
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
-
+    <div>
+      <picture>
+        <source media="(min-width: 960px)" srcset="images/museum-960_x_960.jpg, museum-720_x_480.jpg">
+        <source media="(max-width: 960px)" srcset="images/museum-1440_x_960.jpg, museum-480_x_480.jpg">
+        
+   
+        <img src="images/museumjpg" alt="placeholder">
+      </picture>
+    </div>
   </header>
 </body>
 
